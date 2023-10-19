@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/27cb292809cc8cf7b10e728a3ee0fd0d.jpeg</file>
+    <file>images/robot.png</file>
+    <file>images/1c373539e196716f624f52b1de160d0a.jpeg</file>
+    <file>images/8e5d0239a547e2d06befacc5451ec0f0.jpeg</file>
+    <file>images/8316e2f5c2d9fa8f91fef23f32e2bb8e.jpeg</file>
+    <file>images/aa7800e156d0fd665bd6617033368519.jpeg</file>
+    <file>images/back1.png</file>
+    <file>images/back2.png</file>
+    <file>images/back3.png</file>
+    <file>images/bd8e86e001cf58355839038e3d3b9918.jpeg</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons/清除_clear.png</file>
+    <file>icons/应用_application-one.png</file>
+    <file>icons/setting.png</file>
+    <file>icons/首页_home.png</file>
+    <file>icons/上一步_back.png</file>
+    <file>icons/发送_send.png</file>
+    <file>icons/开关_power.png</file>
+    <file>icons/data-file.png</file>
+    <file>icons/cell.png</file>
+    <file>icons/analysis.png</file>
+    <file>icons/close.png</file>
+    <file>icons/export.png</file>
+    <file>icons/external-transmission.png</file>
+    <file>icons/folder.png</file>
+    <file>icons/folder-one.png</file>
+    <file>icons/loading.png</file>
+    <file>icons/save.png</file>
+    <file>icons/search.png</file>
+    <file>icons/setting.png</file>
+    <file>icons/smart-optimization.png</file>
+    <file>icons/system.png</file>
+  </qresource>
+</RCC>

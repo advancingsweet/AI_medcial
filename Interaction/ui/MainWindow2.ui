@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1245</width>
+    <height>807</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>1221</width>
+     <height>791</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(15, 79, 255);
+border-radius:30px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>1081</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="select_page">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>50</y>
+       <width>351</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255 );</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="back1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>351</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/bd8e86e001cf58355839038e3d3b9918.jpeg);
+border-radius:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255,0);
+color:rgb(255,255,255);
+font: 32pt &quot;Bodoni MT&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Peptide预测</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="peptidebtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>351</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255,0);
+}
+
+QPushButton:hover{
+	
+	background-color: rgba(213, 213, 227,100);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>241</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);</string>
+      </property>
+      <property name="text">
+       <string>验证肽和HLA等位基因之间的亲和力</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>back1</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_2</zorder>
+     <zorder>line</zorder>
+     <zorder>peptidebtn</zorder>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>50</y>
+       <width>351</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255 );</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="back1_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>351</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/8316e2f5c2d9fa8f91fef23f32e2bb8e.jpeg);
+border-radius:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255,0);
+color:rgb(255,255,255);
+font: 32pt &quot;Bodoni MT&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Tcr预测</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tcrbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>351</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255,0);
+}
+
+QPushButton:hover{
+	
+	background-color: rgba(213, 213, 227,100);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>241</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);</string>
+      </property>
+      <property name="text">
+       <string>验证TCR和HLA等位基因之间的亲和力</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>back1_2</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_3</zorder>
+     <zorder>line_2</zorder>
+     <zorder>tcrbtn</zorder>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>460</y>
+       <width>751</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>741</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/27cb292809cc8cf7b10e728a3ee0fd0d.jpeg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>391</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);
+font: 32pt &quot;Bodoni MT&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Aomp</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>741</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aompbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>741</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255,0);
+}
+
+QPushButton:hover{
+	
+	background-color: rgba(213, 213, 227,100);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>461</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);</string>
+      </property>
+      <property name="text">
+       <string>对特定HLA等位基因亲和力较弱的特定源肽寻找高亲和力的突变肽。</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_4</zorder>
+     <zorder>line_3</zorder>
+     <zorder>aompbtn</zorder>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="peptide_page">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(117, 139, 173);
+border-radius:20px;</string>
+    </property>
+    <widget class="QLineEdit" name="inputHLA1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>301</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入HLA</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="inputPeptide">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入Peptide</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="peptideresult">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>491</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>HLA</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Peptide</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Binding</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Peptide Score</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="predictPeptide">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>预测</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image: url(:/icons/icons/analysis.png);
+	
+	background-color: rgb(255, 154, 114);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="peptideprogress">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>710</y>
+       <width>1081</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="peptideExport">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>导出数据</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	
+	border-image: url(:/icons/icons/save.png);
+	background-color:rgb(92, 233, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="peptideRefresh">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>清空</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image:url(:/icons/icons/清除_clear.png);
+	background-color: rgb(161, 255, 73);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="peptideGraphArea">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>491</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgba(27, 53, 113,255);
+	border-radius:20px;
+}</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>491</width>
+        <height>601</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="peptide_result_back">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>551</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="peptide_hla_folderbtn">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+image: url(:/icons/icons/folder.png);
+	
+	background-color: rgb(255, 242, 64);
+}
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="peptide_peptide_folderbtn">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+image: url(:/icons/icons/folder.png);
+background-color: rgb(255, 242, 64);
+}
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="peptide_append">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>90</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string>append</string>
+     </property>
+    </widget>
+    <zorder>peptide_result_back</zorder>
+    <zorder>inputHLA1</zorder>
+    <zorder>inputPeptide</zorder>
+    <zorder>predictPeptide</zorder>
+    <zorder>peptideprogress</zorder>
+    <zorder>peptideExport</zorder>
+    <zorder>peptideRefresh</zorder>
+    <zorder>peptideGraphArea</zorder>
+    <zorder>peptide_hla_folderbtn</zorder>
+    <zorder>peptide_peptide_folderbtn</zorder>
+    <zorder>peptide_append</zorder>
+    <zorder>peptideresult</zorder>
+   </widget>
+   <widget class="QWidget" name="tcr_page">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(117, 139, 173);
+border-radius:20px;</string>
+    </property>
+    <widget class="QLineEdit" name="inputHLA2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>301</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入Peptide</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="inputTcr">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入TCR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="predictTcr">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>预测</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+border-image: url(:/icons/icons/analysis.png);
+background-color: rgb(255, 154, 114);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="tcrGraphArea">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>491</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(27, 53, 113,255);
+border-radius:20px;</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>491</width>
+        <height>601</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="tcrRefresh">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>清空</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image:url(:/icons/icons/清除_clear.png);
+background-color: rgb(161, 255, 73);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tcrresult">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>521</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>Peptide</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TCR</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TCR Score</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="TcrExport">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>导出数据</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image: url(:/icons/icons/save.png);
+background-color:rgb(92, 233, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tcr_result_back_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>541</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tcr_tcr_folderbtn">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+image: url(:/icons/icons/folder.png);
+background-color: rgb(255, 242, 64);
+}
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tcr_hla_folderbtn">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+image: url(:/icons/icons/folder.png);
+background-color: rgb(255, 242, 64);
+}
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="tcr_append">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>90</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>append</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="tcrprogress">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>710</y>
+       <width>1081</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <zorder>tcr_result_back_2</zorder>
+    <zorder>inputHLA2</zorder>
+    <zorder>inputTcr</zorder>
+    <zorder>predictTcr</zorder>
+    <zorder>tcrGraphArea</zorder>
+    <zorder>tcrRefresh</zorder>
+    <zorder>tcrresult</zorder>
+    <zorder>TcrExport</zorder>
+    <zorder>tcr_tcr_folderbtn</zorder>
+    <zorder>tcr_hla_folderbtn</zorder>
+    <zorder>tcr_append</zorder>
+    <zorder>tcrprogress</zorder>
+   </widget>
+   <widget class="QWidget" name="aomp_page">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(117, 139, 173);
+
+border-radius:20px;</string>
+    </property>
+    <widget class="QLineEdit" name="inputHLA3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>341</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入HLA</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="inputPeptide2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>20</y>
+       <width>351</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background-color: rgba(255, 255, 255,150);
+border:1px solid rgba(0,0,0,0);
+border-bottom-color:rgb(0,0,0);
+font: 25 16pt &quot;Bahnschrift Light&quot;;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入Peptide</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AompExport">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>20</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>导出数据</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image: url(:/icons/icons/save.png);
+
+background-color:rgb(92, 233, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="predictAomp">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>20</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>预测</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+border-image: url(:/icons/icons/analysis.png);
+background-color: rgb(255, 154, 114);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AompRefresh">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>20</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>清空</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-image:url(:/icons/icons/清除_clear.png);
+background-color: rgb(161, 255, 73);
+}
+
+QPushButton:hover{
+	background-color: rgb(106, 106, 106);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="aompResult">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>1041</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>30</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>30</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>HLA</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Original Peptide</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mutated Peptide</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mutation amino-acid site</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mutation number</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sequence similarity</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Binding</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Prediction score</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QScrollArea" name="aompGraphArea">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>631</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(27, 53, 113,255);
+border-radius:20px;</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>631</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="GraphicsLayoutWidget" name="aomphistogram" native="true">
+     <property name="geometry">
+      <rect>
+       <x>659</x>
+       <y>340</y>
+       <width>411</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(217, 217, 217);
+border-radius:20px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="aomp_result_back">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>1061</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="aomphistgramback">
+     <property name="geometry">
+      <rect>
+       <x>651</x>
+       <y>340</y>
+       <width>421</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(217, 217, 217);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="Aompprogress">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>710</y>
+       <width>1081</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <zorder>aomp_result_back</zorder>
+    <zorder>aomphistgramback</zorder>
+    <zorder>inputHLA3</zorder>
+    <zorder>inputPeptide2</zorder>
+    <zorder>AompExport</zorder>
+    <zorder>predictAomp</zorder>
+    <zorder>AompRefresh</zorder>
+    <zorder>aompResult</zorder>
+    <zorder>aompGraphArea</zorder>
+    <zorder>aomphistogram</zorder>
+    <zorder>Aompprogress</zorder>
+   </widget>
+   <widget class="QWidget" name="model_page">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="setting_page">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>71</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>71</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="closebtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>520</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/icons/icons/开关_power.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+}
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="writingbtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>420</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/icons/icons/cell.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+}
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settingbtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	
+	border-image: url(:/icons/icons/setting.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+}
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="modelbtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	
+	border-image: url(:/icons/icons/smart-optimization.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+}
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="backbtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+border-image: url(:/icons/icons/上一步_back.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+}
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="homebtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border-radius:30px;
+
+}
+
+
+QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	border-image: url(:/icons/icons/首页_home.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(159, 159, 159);
+	border: none;
+}	
+
+QPushButton:checked{
+	background-color: rgb(165, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="shadow">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>1091</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(26, 73, 159);
+border-radius:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>shadow</zorder>
+  <zorder>stackedWidget</zorder>
+  <zorder>frame_4</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsLayoutWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../src_rc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closebtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1196</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1246</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
