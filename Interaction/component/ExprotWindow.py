@@ -164,7 +164,7 @@ class ExportWindow(QWidget,Ui_Form):
             else:
                 filetype = self.ExportDataPath_2.text().split(".", 1)[-1]
                 if filetype == 'pdf':
-                    with PdfPages(self.self.ExportDataPath_2.text()) as pp:
+                    with PdfPages(self.ExportDataPath_2.text()) as pp:
                         for attn, title in export_attns:
                             plt.figure()
                             plt.clf()
